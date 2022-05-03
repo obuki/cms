@@ -39,7 +39,7 @@
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/users" class="nav-link px-sm-0 px-2">
+                                <router-link to="/login" class="nav-link px-sm-0 px-2">
                                     <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
                                 </router-link>
                             </li>
@@ -104,7 +104,7 @@
 
         const routes = [
             {path:"/", component:Home},
-            {path:"/users",component:()=>import('./components/Users.js')}
+            {path:"/login",component:()=>import('./components/Login.js')}
         ];
 
         const router = VueRouter.createRouter({
